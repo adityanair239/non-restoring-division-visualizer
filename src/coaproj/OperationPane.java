@@ -57,10 +57,9 @@ public class OperationPane extends javax.swing.JPanel implements ActionListener{
         g2.setStroke(new BasicStroke(5));
         jLabel20.setText(CoaProj.l);
         jLabel26.setText(CoaProj.m);
-      //  g.drawLine(0,0,10,10);
-      //  g.drawLine(0,0,308/2,308/2);
+  
       if(CoaProj.q==1)
-      {     //Graphics2D g2 = (Graphics2D)g;
+      {     
             g2.setStroke(new BasicStroke(3));
                jLabel25.setVisible(false);
                jLabel23.setVisible(false);
@@ -79,9 +78,6 @@ public class OperationPane extends javax.swing.JPanel implements ActionListener{
       {  square(g,CoaProj.no_bits);
          arrow(g,CoaProj.no_bits);
 
-            // g.drawSring()
-      //   g.drawString("hfhgfh",10,10);
-       //  g.drawString("hfhgfh",120,120);
       }
       if(CoaProj.addf==1)
       {
@@ -110,7 +106,6 @@ public class OperationPane extends javax.swing.JPanel implements ActionListener{
         if(a==1)
         {
          //g.drawLine(0,0,100,100);
-        // g.drawString("hfhgfh",12,12);
         }
         t.start();
         repaint();
@@ -147,16 +142,14 @@ public class OperationPane extends javax.swing.JPanel implements ActionListener{
             
         
             
-         //   g.drawLine(308/2+15,308/2-15,308/2+15,308/2+15);       
-        //    g.drawLine(308/2-15,308/2+15,308/2+15,308/2+15);
+     
         }
-       // g.drawLine(250/2-(25*0)+15, q+80, 0, q+40);
-       // 560/2+(25*x)+10
+
         
         
             for(i=CoaProj.no_bits-1;i>=0;i--)
             {
-           //     Graphics2D g2 = (Graphics2D)g;
+        
                 g2.setStroke(new BasicStroke(3));
                 g2.setFont(f);          
                 g.drawString(""+arr1[i],560/2-i*25+5,q+10+10+5);
@@ -191,12 +184,10 @@ public class OperationPane extends javax.swing.JPanel implements ActionListener{
                 g.drawLine(p+40,q+40,p+40,q);
                 g.drawLine(p,q+40,p+40,q+40);
             }
-         //   g.drawLine(308/2+15,308/2-15,308/2+15,308/2+15);       
-        //    g.drawLine(308/2-15,308/2+15,308/2+15,308/2+15);
+
         }
             for(i=CoaProj.no_bits-1;i>=0;i--)
             {
-           //     Graphics2D g2 = (Graphics2D)g;
                 g2.setStroke(new BasicStroke(3));
                 g2.setFont(f);
   
@@ -241,12 +232,10 @@ public class OperationPane extends javax.swing.JPanel implements ActionListener{
                 g.drawLine(p+50,q+40,p+50,q);
                 g.drawLine(p,q+40,p+50,q+40);
             }
-         //   g.drawLine(308/2+15,308/2-15,308/2+15,308/2+15);       
-        //    g.drawLine(308/2-15,308/2+15,308/2+15,308/2+15);
+
         }
         g.drawLine(250/2+(25*1)-10, q-10+5, 560/2-(25*x), q-50-5);
-       // g.drawLine(250/2+(25*1)-10,q-10,250/2+(25*1)+5,q-14-10);
-       // g.drawLine(250/2+(25*1)-10,q-10,250/2+(25*1)-10+12+10,q-1-10 );
+
         for(i=1;i<=x;i++)
         {
            {
@@ -254,9 +243,7 @@ public class OperationPane extends javax.swing.JPanel implements ActionListener{
                 g.drawLine(p-20,q-10,p,q-20-30);
                g.drawLine(p-20,q-10,p-20+12,q-4-10 );
                 g.drawLine(p-20,q-10,p-14-6,q-14-10);
-               // g.drawLine(p,q,p,q+40);
-               // g.drawLine(p+40,q+40,p+40,q);
-              //  g.drawLine(p,q+40,p+40,q+40);
+      
             }
         }
         for(i=1;i<=x;i++)
@@ -266,9 +253,6 @@ public class OperationPane extends javax.swing.JPanel implements ActionListener{
                 g.drawLine(p-20,q-10,p,q-20-30);
                 g.drawLine(p-20,q-10,p-20+12,q-4-10);
                 g.drawLine(p-20,q-10,p-14-6,q-14-10);
-               // g.drawLine(p,q,p,q+40);
-               // g.drawLine(p+40,q+40,p+40,q);
-              //  g.drawLine(p,q+40,p+40,q+40);
             }
         }
       }
@@ -304,9 +288,7 @@ public class OperationPane extends javax.swing.JPanel implements ActionListener{
                 g.drawLine(p-20,q-10,p,q-20-30);
                g.drawLine(p-20,q-10,p-20+12,q-4-10 );
                 g.drawLine(p-20,q-10,p-14-6,q-14-10);
-               // g.drawLine(p,q,p,q+40);
-               // g.drawLine(p+40,q+40,p+40,q);
-              //  g.drawLine(p,q+40,p+40,q+40);
+
             }
         }
         for(i=1;i<=x;i++)
@@ -316,9 +298,7 @@ public class OperationPane extends javax.swing.JPanel implements ActionListener{
                 g.drawLine(p-20,q-10,p,q-20-30);
                 g.drawLine(p-20,q-10,p-20+12,q-4-10);
                 g.drawLine(p-20,q-10,p-14-6,q-14-10);
-               // g.drawLine(p,q,p,q+40);
-               // g.drawLine(p+40,q+40,p+40,q);
-              //  g.drawLine(p,q+40,p+40,q+40);
+ 
             }
         }
          g.drawLine(250/2+(20*1)-10, q-10+5, 560/2-(20*x), q-50-5);
@@ -349,12 +329,10 @@ public class OperationPane extends javax.swing.JPanel implements ActionListener{
       {
      
               s1=arr1[i]+s1;
-     //            System.out.print(s1);
-              //  g.drawString("M   =  ",560/2-i*20-60-60,q-20); //a
-                //g.drawString(""+arr3[i],560/2-i*20-60,q-20);
+
                 s2=arr3[i]+s2;
                 s3=arr2[i]+s3;
-            //   g.drawString(""+arr4[i],250/2-(20*i)+5,q+10+10+5+100        
+     
 
      }
                if(CoaProj.q!=1)
@@ -364,7 +342,7 @@ public class OperationPane extends javax.swing.JPanel implements ActionListener{
                s1="";
                s2="";
                s3="";
-            //   System.out.print(s1);
+  
                
                jLabel25.setVisible(true);
                jLabel23.setVisible(true);
@@ -614,8 +592,7 @@ public class OperationPane extends javax.swing.JPanel implements ActionListener{
     }// </editor-fold>//GEN-END:initComponents
  @Override
     public void actionPerformed(ActionEvent e) {
-       // a=1;
-        //z=false;
+
         a=a+1;  
     }
 

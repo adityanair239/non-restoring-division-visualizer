@@ -18,17 +18,6 @@ public class CalcPanel extends javax.swing.JPanel {
     public CalcPanel() throws InterruptedException {
         initComponents();
         int i;
-      //  jPanel2.setPreferredSize(d);
-      //  for(i=0;i<13;i++)
-        //{  
-      
-        //   jPanel2.add(new StepPanel());
-         //  jPanel2.setPreferredSize(d);
-         //  jPanel2.revalidate();
-         //  jScrollPane1.revalidate();
-         //  this.revalidate();
-           
-       // }
         }
 
     /**

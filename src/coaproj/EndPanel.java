@@ -72,26 +72,12 @@ public class EndPanel extends javax.swing.JPanel {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         CardLayout cl = (CardLayout) (CoaProj.card.getLayout());
-        
-      
-           
-           // 
+ 
            CoaProj.tick = 0;     
            CoaProj.flag=false;
            CoaProj.z=1;
            cl.first(CoaProj.card);
-           //CoaProj.card.add(new NewJPanel2());
-      //  try {
-                //  CoaProj.main(new String[]{"a"});
-            // cl.add(cl.first(CoaProj.card));
-            //CoaProj g = new CoaProj();
-            // CoaProj.f.setVisible(false);
-       // } catch (InterruptedException ex) {
-       //     Logger.getLogger(EndPanel.class.getName()).log(Level.SEVERE, null, ex);
-       // }
-            
-       
-        
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
 

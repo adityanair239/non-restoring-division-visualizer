@@ -34,7 +34,6 @@ public class StepPane extends javax.swing.JPanel {
         g2.drawLine(255, 0, 255, 210);
         g2.drawLine(255+255-60, 0, 255+255-60, 210);
         g2.drawLine(255+255-120+255, 0, 255+255-120+255, 210);
-        //g.drawRect(100, 100, 100, 100);
     }
   
 

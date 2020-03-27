@@ -29,14 +29,11 @@ public class CoaProj
     {   Dimension d =new Dimension(0,60);
         no_bits = 0;
         no_bits = 0;
-        //JPanel card = new JPanel(new CardLayout());
         st_q="";st_m="";st_a="";
         l="";m="";n="";
         process="";
         dec_Q=0;dec_M=0;dec_A=0;
         f = new JFrame("Non-Restoring Division ");
-       // JPanel card = new JPanel(new CardLayout());
-       //JPanel card = new JPanel(new CardLayout());
         card.add(new NewJPanel2());
         left = 0;addf=0;subf = 0;
         flag = true;
@@ -56,8 +53,6 @@ public class CoaProj
         while(flag)
         {
         }
-        
-        //System.out.println(" "+dec_Q);
         c.BinaryConvert(dec_Q,'Q');
         c.BinaryConvert(dec_M,'M');
         c.initA();
@@ -79,7 +74,6 @@ public class CoaProj
         s1.jLabel5.setText("    "+c.st_m);
         s1.jLabel6.setText("   "+c.process);
         c.upd(0);
-       // Thread.sleep(000);
         for(i=0;i<no_bits;i++)  
         {  
            CalcPanel.jPanel2.setPreferredSize(d1);
@@ -88,7 +82,6 @@ public class CoaProj
                CalcPanel.jPanel2.add(s);
                CalcPanel.jPanel2.revalidate();
                CalcPanel.jScrollPane1.revalidate();
-              // Thread.sleep(2000);
                CalcPanel.jPanel2.add(s1);
                CalcPanel.jPanel2.revalidate();
                CalcPanel.jScrollPane1.revalidate();
@@ -99,12 +92,9 @@ public class CoaProj
            CalcPanel.jPanel2.add(k);
            c.ls();
            c.upd(i);
-          // Thread.sleep(1000);
-           
            c.strupdate();
            c.upd(i);
            c.proupd(k, 1);
-          // StepPane.jLabel12.setText(process);
            Thread.sleep(2000);
            left=0;
           
@@ -112,8 +102,6 @@ public class CoaProj
            c.upd(i);
            c.msbCheck1();
            c.upd(i);
-         
-         //  Thread.sleep(2000);
            
            c.strupdate();
            c.upd(i);
@@ -122,7 +110,6 @@ public class CoaProj
            if(process=="A <- A - M")
            {    subf=1;
            }
-         //  k.jLabel13.setText(process);
            Thread.sleep(2000);
            addf=0;
            subf=0;
@@ -135,25 +122,15 @@ public class CoaProj
            c.proupd(k, 3);
            Thread.sleep(2000);
            l="";
-           m="";
-         
+           m="";  
            c.textupdate3(k);
            c.upd(i);
-           //CalcPanel.jPanel2.add(new StepPanel());
-          // CalcPanel.jPanel2.add(new StepPane());
-           
-           
-           
-           
            CalcPanel.jPanel2.revalidate();
            CalcPanel.jScrollPane1.revalidate();
-           Thread.sleep(2000);
-           //this.revalidate();
-           
+           Thread.sleep(2000); 
         }
          OperationPane.jLabel12.setText(""+0);
          c.disp();
-         //getchar();  
          c.last();
          if(vv==1)
          {
@@ -164,18 +141,11 @@ public class CoaProj
             m.jLabel5.setText("    "+c.st_m);
             m.jLabel6.setText("   "+"A <- A + M ");
             m.jLabel1.setText("-");  
-           // m.jLabel6.setText("A <- A + M ");
             CalcPanel.jPanel2.add(m);      
          }
          Thread.sleep(2000);
          c.bintodec();
          q=1;
-         
-        
-       //  CardLayout cl = (CardLayout) (CoaProj.card.getLayout());
-        // CoaProj.card.add(new EndPanel());
-       //  cl.next(CoaProj.card);
-         
     }
 
     public void BinaryConvert(int N,char C)
@@ -389,7 +359,6 @@ public class CoaProj
         {
             bitadd();
             process="A <- A + M";
-           // addf=0;
         }
         else if(A.get(no_bits-1)==0)
         {
@@ -506,17 +475,17 @@ public class CoaProj
             switch(carry+minM.get(i)+temp.get(i))
             {
                 case 0 : 
-                         //OperationPane.arr2[i]=0;
+         
                          temp.set(i,0);
                          carry=0;
                          break;
                 case 1:  
-                         //OperationPane.arr2[i]=1;
+          
                          temp.set(i,1);
                          carry=0;
                          break;
                 case 2:  
-                         //OperationPane.arr2[i]=0;
+               
                          temp.set(i,0);
                          carry=1;
                          break;
@@ -543,6 +512,8 @@ public class CoaProj
     
     
 }
+
+
 
 
 

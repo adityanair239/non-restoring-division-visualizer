@@ -19,14 +19,11 @@ public class CenterPanel extends JPanel
           this.add(new OperationPane(),BorderLayout.EAST);
           this.add(new CalcPanel(),BorderLayout.CENTER);  
           this.add(new FlowChart(), BorderLayout.WEST);
-       
-     //    this.add(new FlowChart(), BorderLayout.CENTER);
+
          this.add(new BorderImg_Hor(),BorderLayout.SOUTH);
          this.add(new BorderImg_Vert(),BorderLayout.EAST);
          this.add(new BorderImg_Vert(),BorderLayout.WEST);
-         //  d = this.getSize();
-        
-    
+
     }
     @Override
     public void paint(Graphics g)
@@ -36,6 +33,7 @@ public class CenterPanel extends JPanel
         this.setBackground(Color.BLACK);
     }
 }
+
 
 
 
